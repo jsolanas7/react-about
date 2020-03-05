@@ -12,8 +12,8 @@ const Navbar = () => {
             <div className="menu">
                 <button>Home</button>
                 <Link to='/form'>Formulario</Link>
-                <a href='#'>Contacto</a>
-                <a href='#'>Sobre nosotros</a>
+                <Link to='/contact'>Contacto</Link>
+                <Link to='/about'>Sobre nosotros</Link>
             </div>
         </div>
     )

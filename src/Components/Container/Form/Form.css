@@ -1,19 +1,14 @@
 
-.container{
+.contenedorForm{
     margin: 2%;
-}
-.container div{
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: 80%;
-    margin: 2%;
 }
-
-
-.container div label{
-    margin-right: auto;
+.contenedorForm div{
+    width: 80%;
+    margin: 1%;
 }
 
 button{

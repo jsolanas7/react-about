@@ -2,7 +2,10 @@ import React from 'react';
 import './Form.css';
 const Form = () => {
     return(
-        <div class='container'>
+        <div class='contenedorForm'>
+            <div>
+                <h2>Formulario</h2>
+            </div>
             <div>
                 <label>Nombre</label>
                 <input class="form-control"/>
@@ -20,7 +23,7 @@ const Form = () => {
                 <input class="form-control"/>
             </div>
             <div>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-outline-primary">Guardar</button>
             </div>
         </div>
     )
