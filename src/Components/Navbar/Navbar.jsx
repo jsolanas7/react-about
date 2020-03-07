@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './Navbar.css';
-import { Route, Link, BrowserRouter as Router , Switch} from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import logoPeje from '../../Assets/peje.png';
+import menuHamburguesa from '../../Assets/menuHamburguesa.png';
 
 const Navbar = () => {
     return (
-        <div className="menuContainer">
-            <div className="logo">
-                <img src={logoPeje}/>
+        <Fragment>
+            <div className='menuContainerMobile'>
+                <div>
+                    <img src={menuHamburguesa} />
+                </div>
             </div>
-            <div className="menu">
-                <button>Home</button>
-                <Link to='/form'>Formulario</Link>
-                <Link to='/contact'>Contacto</Link>
-                <Link to='/about'>Sobre nosotros</Link>
+            <div className="menuContainerWeb">
+                <div className="logo">
+                    <img src={logoPeje} />
+                </div>
+                <div className="menu">
+                    <button>Home</button>
+                    <Link to='/form'>Formulario</Link>
+                    <Link to='/contact'>Contacto</Link>
+                    <Link to='/about'>Sobre nosotros</Link>
+                </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
 
